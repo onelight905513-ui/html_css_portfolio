@@ -53,7 +53,7 @@
           </h1>
 
           <p class="lead text-secondary mt-4">
-            놓친 논점을 발견하고, 답안 구조를 개선하고,
+            놓친 논점을 발견하고, 답안 구조를 개선하여,
             반복되는 약점을 관리하세요.
           </p>
 
@@ -155,17 +155,167 @@
   </section>
 
   <!-- CTA -->
-  <section id="contact" class="py-5 text-center">
-    <div class="container py-5">
-      <h2 class="fw-bold">나의 답안, 이제 제대로 분석해 보세요.</h2>
+<section id="contact" class="py-5 bg-light">
+  <div class="container py-5">
+
+    <!-- 제목 -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">논점핏 무료 체험 신청</h2>
       <p class="text-secondary mt-3">
-        논점핏의 첫 번째 체험 사용자를 모집할 예정입니다.
-      </p>
-      <p class="small text-secondary">
-        사전 신청 기능은 준비 중입니다.
+        AI 답안 분석 서비스를 가장 먼저 경험해 보세요.
       </p>
     </div>
-  </section>
+
+    <!-- 신청 폼 -->
+    <div class="row justify-content-center">
+      <div class="col-lg-7 col-md-9">
+
+        <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm">
+
+          <form id="trialForm">
+
+            <!-- 이름 -->
+            <div class="mb-4">
+              <label for="userName" class="form-label fw-bold">
+                이름
+              </label>
+
+              <input
+                type="text"
+                class="form-control"
+                id="userName"
+                name="userName"
+                placeholder="이름을 입력하세요"
+                required
+              >
+            </div>
+
+            <!-- 이메일 -->
+            <div class="mb-4">
+              <label for="userEmail" class="form-label fw-bold">
+                이메일
+              </label>
+
+              <input
+                type="email"
+                class="form-control"
+                id="userEmail"
+                name="userEmail"
+                placeholder="example@email.com"
+                required
+              >
+            </div>
+
+            <!-- 준비 중인 시험 -->
+            <div class="mb-4">
+              <label for="examType" class="form-label fw-bold">
+                준비 중인 시험
+              </label>
+
+              <select
+                class="form-select"
+                id="examType"
+                name="examType"
+                required
+              >
+                <option value="" selected disabled>
+                  시험을 선택하세요
+                </option>
+                <option value="감정평가사">감정평가사 2차</option>
+                <option value="변리사">변리사 2차</option>
+                <option value="행정고시">5급 공채 논문형 시험</option>
+                <option value="행정고시">로스쿨 입시 논술형 시험</option>
+                <option value="기타">기타 논술형 시험</option>
+              </select>
+            </div>
+
+            <!-- 학습 고민 -->
+            <div class="mb-4">
+              <label class="form-label fw-bold">
+                답안 작성 시 가장 어려운 점은 무엇인가요?
+              </label>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="difficulty"
+                  value="핵심 논점 파악"
+                  id="difficulty1"
+                >
+                <label class="form-check-label" for="difficulty1">
+                  핵심 논점을 파악하기 어려워요.
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="difficulty"
+                  value="답안 구조"
+                  id="difficulty2"
+                >
+                <label class="form-check-label" for="difficulty2">
+                  답안의 목차와 구조를 잡기 어려워요.
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  name="difficulty"
+                  value="피드백 부족"
+                  id="difficulty3"
+                >
+                <label class="form-check-label" for="difficulty3">
+                  작성한 답안에 대한 피드백이 부족해요.
+                </label>
+              </div>
+
+            </div>
+
+            <!-- 개인정보 동의 -->
+            <div class="mb-4">
+              <div class="form-check">
+
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="privacyAgree"
+                  name="privacyAgree"
+                  required
+                >
+
+                <label class="form-check-label small" for="privacyAgree">
+                  [필수] 무료 체험 안내를 위한 개인정보 수집 및 이용에 동의합니다.
+                </label>
+
+              </div>
+
+              <p class="small text-secondary mt-2">
+                수집 항목: 이름, 이메일, 준비 중인 시험, 선택한 학습 고민<br>
+                이용 목적: 무료 체험 신청 접수 및 서비스 안내<br>
+                보유 기간: 추후 개인정보 처리방침에 명시
+              </p>
+            </div>
+
+            <!-- 제출 버튼 -->
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg">
+                무료 체험 신청하기
+              </button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="bg-dark text-white py-4">
